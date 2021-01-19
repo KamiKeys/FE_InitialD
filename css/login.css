@@ -1,0 +1,137 @@
+@import "colores.css";
+@import "fuentes.css";
+
+body{
+  margin: 0;
+  font-family: IBM Plex Sans, sans-serif;
+}
+
+#left, #decoracion {
+  height: 100vh;
+  display: flex;
+}
+
+#left {
+  width: 40%;
+  background-color: var(--gris);
+  float: left;
+}
+
+#decoracion {
+  width: 60%;
+  background-color: var(--naranjaOscuro);
+  float: right;
+  background-image: url("/images/fondoLogin.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#logo {
+  height: 8vw;
+  min-height: 100px;
+}
+
+/* FORMULARIO */
+
+form {
+  position: absolute;
+  width: 25vw;
+  left: 7vw;
+  top: 30%;
+  height: 40px;
+}
+
+#login, #password {
+  width: inherit;
+  height: 2.5rem;
+  box-sizing: border-box;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+#login {
+  margin-top: 1em;
+}
+
+#password {
+  margin-top: 3px;
+}
+
+#go {
+  width: 50%;
+  height: 2rem;
+  margin-top: 1em;
+  float: right;
+  box-sizing: border-box;
+  background-color: var(--verde);
+  color: white;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  cursor: pointer;
+}
+
+#error {
+  display: none;
+  width: inherit;
+  text-align: right;
+  color: var(--naranjaOscuro);
+  margin-top: 55px;
+}
+
+@media screen and (max-width: 1000px) {
+
+  #left, #decoracion {
+    width: 100%;
+    display: inherit;
+  }
+
+  #left {
+    height: 80vh;
+  }
+
+  #decoracion {
+    height: 20vh;
+  }
+
+  #logo {
+    height: 12vh;
+  }
+
+  form {
+    position: absolute;
+    display: block;
+    height: 40vh;
+    width: 70%;
+    top: 42vh;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin-right: -50%;
+  }
+
+  #login, #password {
+    width: 100%;
+    height: 2.5em;
+    font-size: 2em;
+  }
+
+  #password {
+    margin-top: 0.2em;
+  }
+
+  #go {
+    height: 2.5em;
+    font-size: 2em;
+  }
+
+  #error {
+    font-size: 2.2em;
+    margin-top: 130px;
+    width: 100%;
+    text-align: right;
+  }
+
+}

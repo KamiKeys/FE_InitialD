@@ -13,7 +13,7 @@ $(document).ready(function(){
                 success: function(data, status){
                     //alert("Data: " + data + "\nStatus: " + status);
                     if(data){ 
-                        window.location.replace("/test/APIWebFE/views/welcome.html");
+                        window.location.replace("/jefe");
                     } else {
                         $("#error").css("display","block");
                     }

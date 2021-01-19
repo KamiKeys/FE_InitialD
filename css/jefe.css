@@ -1,0 +1,140 @@
+@import "colores.css";
+@import "fuentes.css";
+
+body {
+  margin: 0;
+  font-family: IBM Plex Sans, sans-serif
+}
+
+h3 {
+  margin-top: -20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.mensaje {
+  position: absolute;
+  top: 49vh;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(-50%, -50%);
+  left: 60%;
+  margin-right: -50%;
+  color: rgb(175, 175, 175);
+}
+
+/* Barra de navegación */
+
+#navBar {
+  width: 20%;
+  background-color: var(--gris);
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-top: 0;
+  border-right: 1px;
+  border-bottom: 0;
+  border-left: 0;
+  border-style: solid;
+  border-color: black;
+  z-index: 99;
+}
+
+#imagenPerfil {
+  width: 75%;
+  margin-left: 12%;
+  margin-top: 10%;
+}
+
+#nombre, #puesto {
+  width: 100%;
+  text-align: center;
+}
+
+.menu {
+  width: 100%;
+  height: 3rem;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  border-right: 0;
+  border-left: 0;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.navegacion {
+  border-bottom: 0;
+}
+
+#btnDashboard {
+  background-color: var(--naranja);
+}
+
+button i {
+  vertical-align: text-bottom;
+  padding: 0 3px 0 3px;
+}
+
+#cerrarSesion {
+  position: absolute;
+  background-color: var(--rojo);
+  bottom: 0;
+  left: 0;
+}
+
+.menu:hover {
+  background-color: var(--naranja);
+}
+
+/* Contenido */
+
+.topBar {
+  position: sticky;
+  top: 0;
+  padding: 1em;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px;
+  border-left: 0;
+  border-color: black;
+  border-style: solid;
+  background-color: var(--gris);
+}
+
+#contenido {
+  width: 80%;
+  margin-left: 20%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--verde);
+  color: white;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: var(--amarilloClaro);}
+
+/* Vistas */
+
+#resumenVentas, #totalRecaudado, #registrarUsuario {
+  display: none;
+}
