@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const nombreURL = urlParams.get('username');
+  document.getElementById("nombre").innerHTML = nombreURL;
   $.ajax({
     url: "https://localhost:44362/vehiculo",
     dataType: "json",

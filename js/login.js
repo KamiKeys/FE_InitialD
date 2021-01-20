@@ -13,7 +13,7 @@ $(document).ready(function(){
                 success: function(data, status){
                     //alert("Data: " + data + "\nStatus: " + status);
                     if(data){ 
-                        window.location.replace("/jefe");
+                        window.location.replace("/jefe?username="+username);
                     } else {
                         $("#error").css("display","block");
                     }
