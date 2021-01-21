@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/css/navBars.css" />
+<div id="navBar">
+  <img id="imagenPerfil" src="/images/iconoPerfil.png" draggable="false" />
+  <h1 class="nombre">Gordon Freeman</h1>
+  <h3 class="puesto">Jefe</h3>
+  <button class="btnDashboard menu navegacion" onclick="shwDashboard()">
+    <i class="bi bi-speedometer2"></i> Dashboard
+  </button>
+  <button class="btnResumenVentas menu navegacion" onclick="shwResumenVentas()">
+    <i class="bi bi-file-earmark-spreadsheet"></i> Resumen de ventas
+  </button>
+  <button
+    class="btnTotalRecaudado menu navegacion"
+    onclick="shwTotalRecaudado()"
+  >
+    <i class="bi bi-cash-stack"></i> Total recaudado
+  </button>
+  <button class="btnRegistrarUsuario menu" onclick="shwRegistrarUsuario()">
+    <i class="bi bi-person-plus"></i> Registrar usuario
+  </button>
+  <button id="cerrarSesion" class="menu" onclick="logout()">
+    <i class="bi bi-box-arrow-left"></i> Cerrar sesión
+  </button>
+</div>
+<div id="navBarOffCanvas">
+  <button id="cerrar" onclick="closeNav()">
+    <i class="bi bi-x-circle"></i>
+  </button>
+  <img id="imagenPerfil" src="/images/iconoPerfil.png" draggable="false" />
+  <h1 class="nombre">Gordon Freeman</h1>
+  <h3 class="puesto">Jefe</h3>
+  <button class="btnDashboard menu navegacion" onclick="shwDashboard()">
+    <i class="bi bi-speedometer2"></i> Dashboard
+  </button>
+  <button class="btnResumenVentas menu navegacion" onclick="shwResumenVentas()">
+    <i class="bi bi-file-earmark-spreadsheet"></i> Resumen de ventas
+  </button>
+  <button
+    class="btnTotalRecaudado menu navegacion"
+    onclick="shwTotalRecaudado()"
+  >
+    <i class="bi bi-cash-stack"></i> Total recaudado
+  </button>
+  <button class="btnRegistrarUsuario menu" onclick="shwRegistrarUsuario()">
+    <i class="bi bi-person-plus"></i> Registrar usuario
+  </button>
+  <button id="cerrarSesion" class="menu" onclick="logout()">
+    <i class="bi bi-box-arrow-left"></i> Cerrar sesión
+  </button>
+</div>
+<div id="topNavBar">
+  <button onclick="openNav()"><i class="bi bi-menu-app"></i></button>
+  <img id="logoNavBar" src="/images/logoNavBar.png" draggable="false" />
+</div>
